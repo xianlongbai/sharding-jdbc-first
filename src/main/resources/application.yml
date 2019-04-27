@@ -1,0 +1,12 @@
+server:
+  port: 8003
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+    ## spring-data-jpa默认会自己建表，这里我们要手动建立，所以需要将ddl-auto属性设置为none
+      ddl-auto: none
+  application:
+    name: sharding-jdbc-first
+
